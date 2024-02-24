@@ -1,0 +1,9 @@
+*{
+    --dark-gray:#141414;
+    --medium-gray:#1F1F1F;
+    --orange:#FE6A0F;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
