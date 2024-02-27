@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,36 +14,105 @@
     <title>Burguer</title>
 </head>
 <body>
-    <header class="container">
-        <nav>
-            <div class="menu">
-                <ul>
-                    <li><img src="./img/logo.svg" alt="logo"></li>
-                    <li>Início</li>
-                    <li>Burguers</li>
-                    <li>Contato</li>
-                </ul>
-            </div>
-            <div class="btn-menu">
-                <a href="#">Fazer Pedido</a>
+<div class="container">
+    <header>
+        <nav class="nav-container">
+            <ul>
+
+                <li><img src="./img/logo.svg" alt="logo"></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#burgers">Burgers</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="order-btn"><a href="#order">Fazer pedido</a></li>
+            </ul>
+            <div class="menu-responsive">
+                <div class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="banner container">
-            <div class="banner-left">
-                <h2>O Hamburguer mais delicioso.😋</h2>
+    <main class="container">
+        <section class="banner">
+            <div class="left-banner">
+                <h2>O Hamburguer mais delicioso.<span class="emoji">😋</span></h2>
                 <p>A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
-                <a href="#">Fazer Pedido</a>
+                <button>Fazer pedido</button>
             </div>
-            <div class="banner-img">
+            <div class="right-banner">
                 <img src="./img/banner.png" alt="Imagem Banner">
             </div>
         </section>
-        <section class="searching-bar">
-            <h3>Pesquise o seu Hamburguer favorito!</h3>
-            
+        <div class="banner-search">
+            <div class="search">
+                <p>Pesquise o seu <br> Hamburguer favorito!</p>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Digite o nome do seu Burguer</button>
+            </div>
+            <div class="categoria">
+                <p>Selecionar categoria <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+        </div>
+        <section id="cardapio">
+            <div class="box-cardapio">
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-1.png" alt="Texas Burger"></div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-2.png" alt="Texas Burger"></div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-3.png" alt="Texas Burger">
+                    </div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-3.png" alt="Texas Burger"></div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-1.png" alt="Texas Burger"></div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+                <div class="btn-cardapio">
+                    <div class="up"><img class="img-fluid" src="./img/card-burger-2.png" alt="Texas Burger"></div>
+                    <div class="info">
+                        <p>Tradicional</p>
+                        <h2>Texas Burger</h2>
+                        <h3>R$ 25,50</h3>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div id="logo-footer"><img src="./img/footer.svg" alt="logo"></div>
+        <p>powered B7web.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/676eccc9ff.js" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

@@ -1,4 +1,109 @@
 *{
     font-family: 'Calistoga','Inter', serif;
     font-size: 93.75% /*15px*/;
+    color: white;
+}
+/*----------header----------*/
+header li a {
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+}
+header ul li{
+    font-size: large;
+}
+header li a:hover {
+    color: var(--orange);
+}
+.order-btn a:hover {
+    border: 1px solid var(--orange);
+    padding: 8px 64px;
+}
+.order-btn a {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 233%;
+}
+/*----------banner----------*/
+.banner h2 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 14%;
+}
+.banner span {
+    transform: rotate(-7.914deg);
+}
+.banner p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+}
+.banner button{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: large;
+}
+.banner button:hover {
+    color: var(--orange);
+    background-color: #fff;
+    border: none;
+}
+/*----------searching-bars----------*/
+.search p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: start;
+}
+button {
+    color: #979797;
+    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease;
+}
+.categoria p {
+    color: #979797;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+}
+/*----------burguers----------*/
+.btn-cardapio p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: start;
+}
+.btn-cardapio h2 {
+    font-family: 'Calistoga', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: start;
+    color: #fff;
+}
+.btn-cardapio h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: start;
+    color: #FE6A0F;
+}
+/*----------footer----------*/
+footer{
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: var(--soft-gray);
+    height: 20vh;
+    text-align: center;
+    align-items: center;
 }
