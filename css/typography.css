@@ -3,29 +3,21 @@
     font-size: 93.75% /*15px*/;
     color: white;
 }
+/*flex-grow: define o quanto os elementos filhos irão crescer até ocuparem o tamanho do pai quanto maior o número, maior será o espaço que o elemento irá ocupar; flex-shrink: determina o quanto o máximo que um elemento poderá ser diminuido na tela; flex-basis: determina qual será a largura minima que um elemento terá; flex: é a abreviação do flex-grow:1, flex-shrink:1, flex-basis:0 = definido:1*/
 /*----------header----------*/
-header li a {
+header ul li a {
+    padding: 10px;
     color: #fff;
-    font-style: normal;
-    font-weight: 400;
+    transition: all 0.3s;
 }
-header ul li{
-    font-size: large;
-}
-header li a:hover {
+header ul li a.item-menu:hover {
     color: var(--orange);
 }
-.order-btn a:hover {
-    border: 1px solid var(--orange);
-    padding: 8px 64px;
+header a {
+    text-decoration: none;
 }
-.order-btn a {
-    border-radius: 5px;
-    border: 1px solid #FFF;
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 233%;
+header .btn-pedido:hover{
+    background-color: #FE6A0F;
 }
 /*----------banner----------*/
 .banner h2 {
@@ -63,6 +55,8 @@ header li a:hover {
     font-weight: 400;
     color: #fff;
     margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
     text-align: start;
 }
 button {

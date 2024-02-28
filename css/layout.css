@@ -20,35 +20,50 @@ body{
 }
 /*----------header----------*/
 header {
-    padding: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
-.nav-container li img {
-    width: 160px;
-    cursor: pointer;
-}
-.nav-container li img:hover {
-    filter: contrast(80%);
-}
-.nav-container ul, .nav-container.div {
+header ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 32px 80px;
+    height: 55px;
+    min-width: 800px;
 }
-.nav-container ul li, .nav-container ul li a {
+header ul li {
+    margin: 30px;
     list-style: none;
-    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
 }
-.order-btn {
-    padding-left: 220px;
+.btn-pedido {
+    display: flex;
+    margin-left: 15rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    outline: 1px solid var(--color-text, rgba(255, 254, 254, 0.8));
 }
-.order-btn a {
-    padding: 8px 56px;
+.logo {
+    display: flex;
+    align-items: first baseline;
+    margin-right: 50px;
+    padding: 100px 10px;
 }
 /*----------banner----------*/
 .banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    height: auto;
 }
 .banner p {
     width: 70%;
@@ -83,35 +98,41 @@ header {
 }
 /*----------searching-bars----------*/
 .banner-search {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 15vw;
+    height: auto;
     background-color: #1f1f1f;
 }
 button {
-    background: none;
+    background: var(--soft-gray);
+    border-radius: 5px;
     cursor: pointer;
     padding: 5px 15px;
     border: none;
+    margin-bottom: 30px;
+    left: 30px;
+    right: 30px;
 }
 button i {
     margin: 10px;
 }
 .categoria {
-    display: block;
     padding: 8px 40px;
     background-color: #282828;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 100px;
+    margin-top: 80px;
+    width: 300px;
 }
 .categoria i {
     margin: 8px 10px;
 }
 /*----------burguers----------*/
 #cardapio {
-    height: 120vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;

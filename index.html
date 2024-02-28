@@ -10,28 +10,28 @@
     <!--css-->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/layout-responsive.css">
     <!---->
     <title>Burguer</title>
 </head>
 <body>
 <div class="container">
-    <header>
-        <nav class="nav-container">
-            <ul>
-
-                <li><img src="./img/logo.svg" alt="logo"></li>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#burgers">Burgers</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li class="order-btn"><a href="#order">Fazer pedido</a></li>
-            </ul>
-            <div class="menu-responsive">
-                <div class="menu-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+    <header class="container">
+        <div class="menu-mobile d-none">
+            <div class="logo"><img src="./img/logo.svg" alt="">
             </div>
+            <div class="btn-menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu-desktop">
+                <li class="logo"><img src="./img/logo.svg" alt=""></li>
+                <li><a class="item-menu" href="#">Início</a></li>
+                <li><a class="item-menu" href="#burguers">Burguers</a></li>
+                <li><a class="item-menu" href="#contato">Contato</a></li>
+                <li><a class="btn-pedido" href="#pedido">Fazer Pedido</a></li>
+            </ul>
         </nav>
     </header>
     <main class="container">
