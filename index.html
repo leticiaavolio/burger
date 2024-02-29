@@ -1,118 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--fonts-->
+    <title>Burger</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!--css-->
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/layout-responsive.css">
-    <!---->
-    <title>Burguer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <header class="container">
-        <div class="menu-mobile d-none">
-            <div class="logo"><img src="./img/logo.svg" alt="">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">B7<span>•</span>Burger</a>
             </div>
-            <div class="btn-menu-mobile">
-                <i class="fas fa-bars"></i>
+            <nav>
+                <ul class="leftside">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Burgers</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <div class="rigthside">
+                    <a href="#" class="button">Fazer Pedido</a>
+                </div>
+            </nav>
+            <div class="menu">
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
-        <nav>
-            <ul class="menu-desktop">
-                <li class="logo"><img src="./img/logo.svg" alt=""></li>
-                <li><a class="item-menu" href="#">Início</a></li>
-                <li><a class="item-menu" href="#burguers">Burguers</a></li>
-                <li><a class="item-menu" href="#contato">Contato</a></li>
-                <li><a class="btn-pedido" href="#pedido">Fazer Pedido</a></li>
-            </ul>
-        </nav>
     </header>
-    <main class="container">
-        <section class="banner">
-            <div class="left-banner">
-                <h2>O Hamburguer mais delicioso.<span class="emoji">😋</span></h2>
+    <section class="hero">
+        <div class="container">
+            <div class="leftside">
+                <h1>O Hamburguer mais delicioso. <span class="emoticon">&#128523;</span> </h1>
                 <p>A primeira hamburgueria virtual que você faz o pedido online e come o burger através do computador.</p>
-                <button>Fazer pedido</button>
+                <a href="" class="button"> Fazer pedido</a>
             </div>
-            <div class="right-banner">
-                <img src="./img/banner.png" alt="Imagem Banner">
-            </div>
-        </section>
-        <div class="banner-search">
-            <div class="search">
-                <p>Pesquise o seu <br> Hamburguer favorito!</p>
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i>Digite o nome do seu Burguer</button>
-            </div>
-            <div class="categoria">
-                <p>Selecionar categoria <i class="fa-solid fa-angle-down"></i></p>
+            <div class="rightside">
+                <img src="./img/banner.png" alt="Burger delicioso">
             </div>
         </div>
-        <section id="cardapio">
-            <div class="box-cardapio">
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-1.png" alt="Texas Burger"></div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
+    </section>
+    <section class="search">
+        <div class="container">
+            <div class="title">Pesquise o seu<br>Hamburguer favorito!</div>
+            <div class="sides">
+                <div class="leftside">
+                    <input type="search" placeholder="Digite o nome do Burger">
                 </div>
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-2.png" alt="Texas Burger"></div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
-                </div>
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-3.png" alt="Texas Burger">
-                    </div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
-                </div>
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-3.png" alt="Texas Burger"></div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
-                </div>
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-1.png" alt="Texas Burger"></div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
-                </div>
-                <div class="btn-cardapio">
-                    <div class="up"><img class="img-fluid" src="./img/card-burger-2.png" alt="Texas Burger"></div>
-                    <div class="info">
-                        <p>Tradicional</p>
-                        <h2>Texas Burger</h2>
-                        <h3>R$ 25,50</h3>
-                    </div>
+                <div class="rightside">
+                    <select>
+                        <option selected disabled value="">Selecionar Categoria</option>
+                        <option value="burger">burgers</option>
+                        <option value="pizza">pizza</option>
+                        <option value="vegetariano">vegetariano<option>
+                        <option value="kids">kids</option>
+                    </select>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="products-grid">
+                <a href="" class="product-item">
+                    <div class="warning">Promoção</div>
+                    <div class="photo">
+                        <img src="./img/card-burger-1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+                <a href="" class="product-item">
+                    <div class="photo">
+                        <img src="./img/card-burger-2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+                <a href="" class="product-item">
+                    <div class="photo">
+                        <img src="./img/card-burger-3.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+                <a href="" class="product-item">
+                    <div class="photo">
+                        <img src="./img/card-burger-4.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+                <a href="" class="product-item">
+                    <div class="photo">
+                        <img src="./img/card-burger-1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+                <a href="" class="product-item">
+                    <div class="photo">
+                        <img src="./img/card-burger-2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="product-category">Tradicional</div>
+                        <div class="product-name">Texas Burguer</div>
+                        <div class="product-price">R$25,90</div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </main>
     <footer>
-        <div id="logo-footer"><img src="./img/footer.svg" alt="logo"></div>
-        <p>powered B7web.</p>
+        <div class="container">
+            <div class="logo">
+                <a href="">B7 <span>•</span> Burguer</a>
+            </div>
+            <div class="copyrights">© criado pela <a href="">B7web</a>.</div>
+        </div>
     </footer>
-    <script src="https://kit.fontawesome.com/676eccc9ff.js" crossorigin="anonymous"></script>
-</div>
+    <script src="https://kit.fontawesome.com/2621df46d3.js" crossorigin="anonymous"></script>
 </body>
 </html>
